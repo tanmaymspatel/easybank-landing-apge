@@ -1,4 +1,4 @@
-import { NavLink, useParams } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import logo from '../../assets/images/logo.svg'
 
@@ -6,9 +6,9 @@ function Header() {
     return (
         <div className="h-100 container">
             <div className="h-100 d-flex align-items-center justify-content-between">
-                <div className="logo-section">
+                <div>
                     <NavLink to="/">
-                        <figure className='logo-container mb-0'>
+                        <figure className='mb-0'>
                             <img src={logo} alt="easy-bank-logo" className='img-fluid' />
                         </figure>
                     </NavLink>
