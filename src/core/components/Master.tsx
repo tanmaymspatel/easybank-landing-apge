@@ -12,7 +12,7 @@ function Master() {
                 <div className="flex-grow-1">
                     <Routing />
                 </div>
-                <footer id="footer" className="h-100 bg-primary">
+                <footer id="footer" className="h-100 bg-primary text-center text-md-start">
                     <Footer />
                 </footer>
             </main>

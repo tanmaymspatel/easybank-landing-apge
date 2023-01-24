@@ -1,5 +1,22 @@
 #footer {
     .social {
-        padding-right: 10rem;
+        justify-content: center;
+
+        @include media-breakpoint-up(md) {
+            justify-content: start;
+        }
+
+        .social-icon {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .footer-4-container {
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+            text-align: end;
+        }
     }
 }
