@@ -3,23 +3,76 @@
     object-fit: cover;
     background-repeat: no-repeat;
     background-position: 210% 90%;
-    background-size: 80%;
     padding: 10rem 0;
+    background-size: 80%;
+
+    @include media-breakpoint-down(xl) {
+        // background-image: url('../../images/bg-intro-desktop.svg');
+        background-position: 220% 100%;
+        padding: 4rem 0;
+        background-size: 80%;
+    }
+
+    @include media-breakpoint-down(md) {
+        background-image: url('../../images/bg-intro-mobile.svg');
+        background-position: 0% 0%;
+        background-size: 100%;
+        padding: 40rem 0 5rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 10rem 0 5rem;
+    }
+
 }
 
 .hero-heading {
     font-size: 3.5rem;
-    padding-right: 8rem;
+    padding: 0 8rem 0 0;
+
+    @include media-breakpoint-down(xl) {
+        font-size: 2.5rem;
+        padding: 0 2rem 0 0;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 6rem 0 0;
+        font-size: 2rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 43vh 0 0;
+    }
 }
 
 .hero-sub-heading {
     font-size: 1.125rem;
-    padding-right: 12rem;
+    padding: 0 12rem 0 0;
+
+    @include media-breakpoint-down(xl) {
+        padding: 0 4rem 0 0;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 1rem;
+        padding: 0;
+        text-align: center;
+    }
 }
 
 .hero-img {
     top: -120px;
     right: -150px;
+
+    @include media-breakpoint-down(xl) {
+        width: 60%;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 95%;
+        top: -100px;
+        right: 5px;
+    }
 }
 
 .section {
@@ -36,6 +89,10 @@
 
     .heading {
         font-size: 2.5rem;
+
+        @include media-breakpoint-down(md) {
+            font-size: 2rem;
+        }
     }
 
     .sub-heading {
@@ -46,11 +103,24 @@
         font-size: 1.5rem;
     }
 
+    .article-img-container {
+        height: 250px;
+    }
+
     .article-img {
-        border-radius: 4px 4px 0 0;
+        border-radius: 5px 5px 0 0;
     }
 
     .article-description {
         font-size: 0.875rem;
+        // ellipsis
+        display: block;
+        display: -webkit-box;
+        max-width: 100%;
+        height: 65px;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }

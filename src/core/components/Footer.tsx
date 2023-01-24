@@ -13,7 +13,7 @@ import instagram from "../../assets/images/icon-instagram.svg"
 function Footer() {
     return (
         <section className="py-4 py-md-5">
-            <div className="container">
+            <div className="container-lg">
                 <div className="row">
                     {/* footer 1 - logo and social links */}
                     <div className="col-md-4">
