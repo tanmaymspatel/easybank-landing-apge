@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom'
 
 import logo from '../../assets/images/logo.svg'
+import hamburger from '../../assets/images/icon-hamburger.svg'
+import close from '../../assets/images/icon-close.svg'
 
 function Header() {
     return (
@@ -13,27 +15,34 @@ function Header() {
                         </figure>
                     </NavLink>
                 </div>
-                <nav>
-                    <ul className='nav'>
+
+                <nav className='nav-links transition'>
+                    <ul className='nav flex-column flex-md-row'>
                         <li className='nav-item'>
-                            <NavLink to="/" className='nav-link text-success'>Home</NavLink>
+                            <NavLink to="/" className='nav-link'>Home</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink to="/about" className='nav-link text-success'>About</NavLink>
+                            <NavLink to="/about" className='nav-link'>About</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink to="/contact" className='nav-link text-success'>Contact</NavLink>
+                            <NavLink to="/contact" className='nav-link'>Contact</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink to="/blog" className='nav-link text-success'>Blog</NavLink>
+                            <NavLink to="/blog" className='nav-link'>Blog</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink to="/careers" className='nav-link text-success'>Careers</NavLink>
+                            <NavLink to="/careers" className='nav-link'>Careers</NavLink>
                         </li>
                     </ul>
                 </nav>
-                <div>
+                <div className='d-none d-md-block'>
                     <button className='btn btn-gradient text-light'>Request Invite</button>
+                </div>
+                <div className='d-md-none mobile-menu'>
+                    <label htmlFor="mobileToggle">
+                        <img src={hamburger} alt="hamburger-menu" className='icon-hamburger transition' />
+                        <img src={close} alt="close-meu" className='icon-close transition' />
+                    </label>
                 </div>
             </div>
         </div>

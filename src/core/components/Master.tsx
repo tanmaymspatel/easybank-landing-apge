@@ -5,10 +5,11 @@ import Routing from "./Routing";
 function Master() {
     return (
         <div className="h-100 d-flex flex-column">
+            <input type="checkbox" id="mobileToggle" className='d-none' />
             <header id="header">
                 <Header />
             </header>
-            <main className="flex-grow-1 d-flex flex-column overflow-y-auto">
+            <main className="main-content flex-grow-1 d-flex flex-column overflow-y-auto transition">
                 <div className="flex-grow-1">
                     <Routing />
                 </div>
