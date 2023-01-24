@@ -1,6 +1,6 @@
 import Articles from "../components/Articles"
 import HeroSection from "../components/HeroSection"
-import Whychoose from "../components/Whychoose"
+import Whychoose from "../components/WhyChoose"
 
 function Home() {
     return (

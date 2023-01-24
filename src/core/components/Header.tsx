@@ -4,7 +4,7 @@ import logo from '../../assets/images/logo.svg'
 
 function Header() {
     return (
-        <div className="h-100 container">
+        <div className="h-100 container-lg">
             <div className="h-100 d-flex align-items-center justify-content-between">
                 <div>
                     <NavLink to="/">
