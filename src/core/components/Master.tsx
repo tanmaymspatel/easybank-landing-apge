@@ -1,4 +1,3 @@
-import Home from "../../pages/Home";
 import Footer from "./Footer";
 import Header from "./Header";
 import Routing from "./Routing";
@@ -12,7 +11,7 @@ function Master() {
             </header>
             <main className="main-content flex-grow-1 d-flex flex-column overflow-y-auto transition">
                 <div className="flex-grow-1">
-                    <Home />
+                    <Routing />
                 </div>
                 <footer id="footer" className="h-100 bg-primary text-center text-md-start">
                     <Footer />
