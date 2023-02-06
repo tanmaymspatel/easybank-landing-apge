@@ -3,7 +3,9 @@ import { NavLink } from 'react-router-dom'
 import logo from '../../assets/images/logo.svg'
 import hamburger from '../../assets/images/icon-hamburger.svg'
 import close from '../../assets/images/icon-close.svg'
-
+/**
+ * @returns Header component
+ */
 function Header() {
     return (
         <div className="h-100 container-lg">

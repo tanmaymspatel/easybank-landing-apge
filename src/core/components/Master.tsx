@@ -1,7 +1,9 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import Routing from "./Routing";
-
+/**
+ * @returns Main component
+ */
 function Master() {
     return (
         <div className="h-100 d-flex flex-column">
